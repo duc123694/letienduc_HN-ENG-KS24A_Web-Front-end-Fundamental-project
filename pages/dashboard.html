@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="../assets/icons/mail.png" alt="" width="22px" height="26px" />
+        <img src="../assets/icons/bell.png" alt="" width="30px" height="24px" />
+        <img
+          src="../assets/icons/avartar 3.png"
+          alt=""
+          width="43px"
+          height="34px"
+        />
+      </nav>
+    </header>
+    <main>
+      <div class="sidebar">
+        <div class="menu-btn">
+          <img
+            src="../assets/icons/Users_Group.png"
+            alt=""
+            width="24px"
+            height="24px"
+          /><a class="link" href="../pages/register.html">Manage Users </a>
+        </div>
+        <div class="menu-btn">
+          <img
+            src="../assets/icons/Book.png"
+            alt=""
+            width="24px"
+            height="24px"
+          /><a class="link" href="../pages/register.html">Manage Entries</a>
+        </div>
+        <div class="menu-btn">
+          <img
+            src="../assets/icons/Book_Open.png"
+            alt=""
+            width="24px"
+            height="24px"
+          /><a class="link" href="../pages/register.html">Manage Article</a>
+        </div>
+        <div class="menu-btn">
+          <img
+            src="../assets/icons/Log_Out.png"
+            alt=""
+            width="24px"
+            height="24px"
+          /><a class="link" href="../pages/index.html">Log out</a>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="title">
+          <div class="search">
+            <input
+              type="text"
+              placeholder="Search user"
+              class="search-box"
+              id="search"
+            />
+            <img
+              src="../assets/icons/search-user.png"
+              alt=""
+              width="18px"
+              height="18px"
+              class="search-icon"
+            />
+          </div>
+        </div>
+
+        <div>
+          <h2 class="title-manage">📂 Manage Categories</h2>
+          <p class="text-manage">Category Name:</p>
+          <input
+            type="text"
+            id="categoryName"
+            class="input-box"
+            placeholder="Enter category name"
+          />
+          <button class="add-btn" onclick="addCategory()">Add Category</button>
+          <h3>📋 Category List</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Category Name</th>
+                <th class="action">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="categoryList">
+              <!-- Categories will be added here dynamically -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pagination">
+          <button class="but">&larr; Previous</button>
+          <div>
+            <span><button class="num">1</button></span>
+            <span><button class="num">2</button></span>
+            <span><button class="num">3</button></span>
+            <span>.....</span>
+            <span><button class="num">6</button></span>
+            <span><button class="num">7</button></span>
+            <span><button class="num">8</button></span>
+          </div>
+          <button class="but">Next &rarr;</button>
+        </div>
+      </div>
+    </main>
+    <script src="../js/dashboard.js"></script>
+  </body>
+</html>

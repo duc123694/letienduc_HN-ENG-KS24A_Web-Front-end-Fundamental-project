@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: 
+  linear-gradient(0deg, #172236, #172236), /* Gradient tuyến tính */
+  radial-gradient(65.1% 157.43% at 100% 100%, #4466A2 15%, #2D446C 35%, #1E2D48 75%, #1D2B44 80%, rgba(0, 0, 0, 0) 100%), /* Gradient vòng tròn 1 */
+  radial-gradient(33.85% 81.86% at 0% 0%, #354F7E 15%, #2D446C 35%, #1E2D48 75%, #1D2B44 80%, rgba(0, 0, 0, 0) 100%); /* Gradient vòng tròn 2 */
+
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    position: relative;
+    display: flex;
+    width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .left-section {
+    margin-top: 200px;
+    padding: 40px;
+    text-align: center;
+  }
+  .left-section h1 {
+    padding: 0 80px 42px 42px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57,6px;
+    color: #E8EFFD;
+  }
+  .left-section p{
+    font-weight: 400;
+    font-size: 15.88px;
+    line-height: 24px;
+    color: #BAD0F8;
+  }
+  .right-section {
+    width: 492px;
+    height: 554px;
+    background: white;
+    padding: 40px;
+    border-radius: 4px;
+  }
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFFE5;
+  }
+  .input-group {
+    display: flex;
+    gap: 94px;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+  }
+  label{
+    color:#212529 ;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .button {
+    background: #0D6EFD;
+    color: white;
+    width: 80.2px;
+    height: 38px;
+    padding: 11px 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 37px;
+  }
+  .img{
+    position: absolute;
+  }
+  .img1{
+    margin: 26px 0px 0px 395px;
+    margin-bottom: 150px;
+  }
+  .img2{
+    margin-left:1235px ;
+  }
+  .login{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #DC3545;
+  }
+  .text-login{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000000;
+  }
+.have-login{
+  margin-top: 20px;
+}

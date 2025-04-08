@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/article-manager.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="../assets/icons/mail.png" alt="" width="22px" height="26px" />
+        <img src="../assets/icons/bell.png" alt="" width="30px" height="24px" />
+        <img
+          src="../assets/icons/avartar 3.png"
+          alt=""
+          width="43px"
+          height="34px"
+        />
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h2>Quản lý bài viết</h2>
+        <table id="postTable">
+          <thead>
+            <tr>
+              <th>Ảnh</th>
+              <th>Tiêu đề</th>
+              <th>Chủ đề</th>
+              <th>Nội dung</th>
+              <th>Trạng thái</th>
+              <th>Chỉnh sửa trạng thái</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="../assets/images/Image1-article.png"
+                  alt="món ăn"
+                  width="100px"
+                  height="70px"
+                />
+              </td>
+              <td>Học nấu cá sốt cà chua</td>
+              <td>Nấu ăn</td>
+              <td>Tôi đã học được cách nấu ăn...</td>
+              <td><span class="status-public">Public</span></td>
+              <td>
+                <select onchange="changeStatus(this)">
+                  <option value="Public">Public</option>
+                  <option value="Private" selected>Private</option>
+                </select>
+              </td>
+              <td>
+                <button class="action-btn" onclick="deleteRow(this)">
+                  Xóa
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="https://via.placeholder.com/60x60.png?text=CV+IT"
+                  alt="cv it"
+                />
+              </td>
+              <td>Bí kíp viết CV ngành IT</td>
+              <td>IT</td>
+              <td>Chia sẻ cách viết CV ấn tượng...</td>
+              <td><span class="status-private">Private</span></td>
+              <td>
+                <select onchange="changeStatus(this)">
+                  <option value="Public">Public</option>
+                  <option value="Private" selected>Private</option>
+                </select>
+              </td>
+              <td>
+                <button class="action-btn" onclick="deleteRow(this)">
+                  Xóa
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="pagination">
+          <button class="but">&larr; Previous</button>
+          <div>
+            <span><button class="num">1</button></span>
+            <span><button class="num">2</button></span>
+            <span><button class="num">3</button></span>
+            <span>.....</span>
+            <span><button class="num">6</button></span>
+            <span><button class="num">7</button></span>
+            <span><button class="num">8</button></span>
+          </div>
+          <button class="but">Next &rarr;</button>
+        </div>
+      </div>
+    </main>
+    <script src="../js/article-manager.js"></script>
+  </body>
+</html>

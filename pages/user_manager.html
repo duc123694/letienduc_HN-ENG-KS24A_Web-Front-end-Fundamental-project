@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/user_manager.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img
+          src="../assets/icons/mail.png"
+          alt=""
+          width="22px"
+          height="26px"
+        />ư
+        <img src="../assets/icons/bell.png" alt="" width="30px" height="24px" />
+        <img
+          src="../assets/icons/avartar 3.png"
+          alt=""
+          width="43px"
+          height="34px"
+        />
+      </nav>
+    </header>
+    <main>
+      <div class="sidebar">
+        <div class="menu-btn">
+          <img
+            src="../assets/icons/Users_Group.png"
+            alt=""
+            width="24px"
+            height="24px"
+          /><a class="link" href="../pages/register.html">Manage Users </a>
+        </div>
+        <div class="menu-btn">
+          <img
+            src="../assets/icons/Book.png"
+            alt=""
+            width="24px"
+            height="24px"
+          /><a class="link" href="../pages/register.html">Manage Entries</a>
+        </div>
+        <div class="menu-btn">
+          <img
+            src="../assets/icons/Book_Open.png"
+            alt=""
+            width="24px"
+            height="24px"
+          /><a class="link" href="../pages/register.html">Manage Article</a>
+        </div>
+        <div class="menu-btn">
+          <img
+            src="../assets/icons/Log_Out.png"
+            alt=""
+            width="24px"
+            height="24px"
+          /><a class="link" href="../pages/index.html">Log out</a>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="title">
+          <div class="title-container">
+            <h2 class="text-title">
+              Team members <span class="user-count">100 users</span>
+            </h2>
+          </div>
+          <div class="search">
+            <input
+              type="text"
+              placeholder="Search user"
+              class="search-box"
+              id="search"
+            />
+            <img
+              src="../assets/icons/search-user.png"
+              alt=""
+              width="18px"
+              height="18px"
+              class="search-icon"
+            />
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Status &darr;</th>
+              <th>Email address</th>
+              <th>active sort by name &uArr; &dArr;</th>
+            </tr>
+          </thead>
+          <tbody id="user-list">
+            <tr class="user-list">
+              <td>
+                <div class="center-name">
+                  <div>
+                    <img
+                      class="img-name"
+                      src="../assets/icons/avartar4.png"
+                      alt=""
+                      width="40px"
+                      height="40px"
+                    />
+                  </div>
+                  <div class="text-name">
+                    <p class="text-name1">Olivia Rhye</p>
+                    <p class="text-name2">@olivia</p>
+                  </div>
+                </div>
+              </td>
+              <td>hoạt động</td>
+              <td class="text-name2">olivia@untitledui.com</td>
+              <td>
+                <button class="block">Block</button>
+                <button class="unblock">Unblock</button>
+              </td>
+            </tr>
+            <tr class="user-list">
+              <td>
+                <div class="center-name">
+                  <div>
+                    <img
+                      class="img-name"
+                      src="../assets/icons/avartar4.png"
+                      alt=""
+                      width="40px"
+                      height="40px"
+                    />
+                  </div>
+                  <div class="text-name">
+                    <p class="text-name1">Olivia Rhye</p>
+                    <p class="text-name2">@olivia</p>
+                  </div>
+                </div>
+              </td>
+              <td>hoạt động</td>
+              <td class="text-name2">olivia@untitledui.com</td>
+              <td>
+                <button class="block">Block</button>
+                <button class="unblock">Unblock</button>
+              </td>
+            </tr>
+            <tr class="user-list">
+              <td>
+                <div class="center-name">
+                  <div>
+                    <img
+                      class="img-name"
+                      src="../assets/icons/avartar4.png"
+                      alt=""
+                      width="40px"
+                      height="40px"
+                    />
+                  </div>
+                  <div class="text-name">
+                    <p class="text-name1">Olivia Rhye</p>
+                    <p class="text-name2">@olivia</p>
+                  </div>
+                </div>
+              </td>
+              <td>hoạt động</td>
+              <td class="text-name2">olivia@untitledui.com</td>
+              <td>
+                <button class="block">Block</button>
+                <button class="unblock">Unblock</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination">
+          <button class="but">&larr; Previous</button>
+          <div>
+            <span><button class="num">1</button></span>
+            <span><button class="num">2</button></span>
+            <span><button class="num">3</button></span>
+            <span>.....</span>
+            <span><button class="num">6</button></span>
+            <span><button class="num">7</button></span>
+            <span><button class="num">8</button></span>
+          </div>
+          <button class="but">Next &rarr;</button>
+        </div>
+      </div>
+    </main>
+    <script src="../js/user_manager.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RIKKEI_EDU _BLOG</title>
+    <link rel="icon" href="../assets/icons/logo.png" type="image/png" />
+  </head>
+  <link rel="stylesheet" href="../css/register.css" />
+  <body>
+    <div class="img">
+      <img
+        class="img1"
+        src="../assets/images/register_gradient.png"
+        alt=""
+        width="220px"
+        height="213px"
+      />
+      <img
+        class="img2"
+        src="../assets/images/register_gradient-1.png"
+        alt=""
+        width="300px"
+        height="300px"
+      />
+    </div>
+    <div class="container">
+      <div class="left-section">
+        <h1>Welcome to the website</h1>
+        <p>RIKKEI EDUCATION</p>
+      </div>
+      <div class="right-section">
+        <form id="registerForm">
+          <div class="input-group">
+            <div>
+              <input type="text" id="first-name" />
+              <label for="first-name">First name</label>
+            </div>
+            <div>
+              <input type="text" id="last-name" />
+              <label for="last-name">Last name</label>
+            </div>
+          </div>
+          <div>
+            <input type="email" id="email" />
+            <label for="email">Email address</label>
+          </div>
+          <div>
+            <input type="password" id="password" minlength="8" />
+            <label for="password">Password</label>
+          </div>
+          <div>
+            <input type="password" id="confirm-password" />
+            <label for="confirm-password">Confirm Password</label>
+          </div>
+          <button class="button" type="submit">Sign up</button>
+          <div class="have-login">
+            <strong class="text-login">Already have an account?</strong>
+            <span><a class="login" href="../pages/login.html">login</a></span>
+          </div>
+        </form>
+        <p id="message"></p>
+        <!-- Thêm thông báo lỗi hoặc thành công -->
+      </div>
+    </div>
+    <script src="../js/register.js"></script>
+  </body>
+</html>
