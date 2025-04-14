@@ -1,12 +1,112 @@
-header{
-    border: 1px;
-    width: 100%;
-    height: 58px;
-    box-shadow: 0px 0.98px 0px 0px #12203B17;
+header {
+    background-color: #ffffff;
+    padding: 12px 24px;
+    border-bottom: 1px solid #e0e0e0;
     display: flex;
-    justify-content: right;
-    gap: 36px;
-}
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+ body{
+  font-family: Arial, Helvetica, sans-serif;
+ } 
+  .icon-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+  }
+  
+  #avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  #avatar:hover {
+    transform: scale(1.1);
+  }
+  /* Ẩn menu khi không sử dụng */
+  .dropdown-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 240px;
+    box-shadow: 0px 12px 16px -4px rgba(0, 0, 0, 0.1);
+    display: none;
+    transition: all 0.3s ease;
+    padding:10px
+  }
+  .dropdown-menu li {
+    list-style: none;
+    border-bottom: 1px solid #eee;
+    padding: 12px 16px;
+  }
+  
+  .dropdown-menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    display: block;
+    transition: 0.2s;
+  }
+  
+  .dropdown-menu li a:hover {
+    color: #0e73f6;
+  }
+  li {
+    list-style: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 40px;
+  }
+  .info-a{
+    display: flex;
+    gap: 5px;
+  }
+  .info-text-1{
+    line-height: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #344054;
+  }
+  .info-text-2{
+    line-height: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color:#667085 ;
+  }
+  /* Thêm hiệu ứng khi hover lên ảnh đại diện */
+  #user-info:hover .dropdown-menu {
+    display: block; /* Hiển thị menu khi người dùng hover vào avatar */
+  }
+  .online-status {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #12B76A; /* Màu xanh cho tích online */
+    border-radius: 50%; /* Làm phần tích thành hình tròn */
+    border: 2px solid white; /* Để làm nổi bật hơn */
+  }
+  .avatar-container {
+    position: relative;
+    display: inline-block;
+  }
+  
 main {
     display: flex;
     font-family: Arial, sans-serif;
@@ -17,6 +117,7 @@ main {
     width: 200px;
     background:#FAFAFB;
     padding: 20px;
+    margin-right: 10px;
 }
 .menu-btn {
     font-weight: 600;
@@ -73,9 +174,10 @@ main {
   }
 .search-box {
     margin-left: 250px;
+    border-radius: 8px;
     border: none;
     width: 600px;
-    height: 30px;
+    height: 50px;
     border: 1px solid rgba(221, 226, 228, 1);
     background-color: #FFFFFF;
     padding: 8px 40px 8px 16px;
@@ -116,22 +218,39 @@ main {
 }
 .input-box {
     width: 100%;
-    height: 26px;
+    height: 40px;
     padding: 11px;
-    margin: 10px 0;
+    margin-top: 5px ;
     border: 1px solid #CCCCCC;
     border-radius: 5px;
 }
 .add-btn {
+    display: inline-block;
     width: 100%;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #28A745;
     color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
     border: none;
-    font-size: 13px;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-}
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.25s ease, transform 0.2s ease;
+    margin-top: 8px;
+    margin-left: auto; /* căn phải nếu trong flex container */
+  }
+  
+  .add-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+  }
+  
+  .add-btn:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+  }
+  
 table {
     width: 100%;
     margin-top: 20px;
@@ -163,3 +282,46 @@ th, td {
     font-weight: 400;
     line-height: 100%;
 }
+button.block {
+    background-color: #ff4d4f;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+  
+  button.block:hover {
+    background-color: #d9363e;
+    transform: scale(1.05);
+  }
+  
+  button.block:active {
+    background-color: #b91c1c;
+    transform: scale(0.98);
+  }
+  /* Nút Edit */
+button.edit {
+    background-color: #1890ff;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 6px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+  
+  button.edit:hover {
+    background-color: #1677c3;
+    transform: scale(1.05);
+  }
+  
+  button.edit:active {
+    background-color: #095cb5;
+    transform: scale(0.98);
+  }
+  
