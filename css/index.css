@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-size: 16px;
 }
@@ -76,10 +76,6 @@ header {
 #avatar {
   cursor: pointer;
 }
-
-
-
-
 .info-a{
   display: flex;
   gap: 5px;
@@ -333,51 +329,50 @@ margin-bottom: 32px;
 /* footer */
 footer{
     border-top: 1px solid #E4E4E7;
-    margin:  200px 50px;
+    margin:  100px 0px;
 }
 .pagination {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    border-top: 1px solid #EAECF0;
-    padding: 20px;
-  }
-  
-.pagination a, .pagination .dots {
-    text-decoration: none;
-    color: #6b7280; /* Màu xám nhạt */
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: 0.3s;
-  }
-  
-.pagination .page {
-    border: 1px solid #e5e7eb;
-  }
-  
-.pagination .active {
-    background-color: #ede9fe; /* Màu nền tím nhạt */
-    color: #7c3aed; /* Màu tím */
-    border: 1px solid #7c3aed;
-  }
-  
-.pagination a:hover {
-    background-color: #f3f4f6;
-  }
-  
-.pagination .prev, .pagination .next {
-    font-weight: bold;
-  }
-  
-.pagination .dots {
-    padding: 8px 12px;
-  }
+  display: flex;
+  justify-content: space-between;
+}
+.but{
+    cursor: pointer;
+    width: 111px;
+    height: 35px;
+    border-radius: 8px;
+    padding: 8px 14px ;
+    gap: 7.84px;
+    border: 0.98px solid #D0D5DD;
+    background-color: #FFFFFF;
+}
+.but:hover{
+    background-color: #CCCCCC;
+}
+button.num.active {
+  color: #7F56D9; 
+  background-color:#F9F5FF ;
+
+}
+  .num{
+    border:1px ;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    color: #667085;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.num:hover{
+    background-color:#F9F5FF ;
+    color: #7F56D9;
+}
 .container {
     display: flex;
     justify-content: space-around;
-    gap: 170px;
-    padding: 30px 70px;
+    padding: 50px;
+    gap: 70px;
 }
+
 .footer-icon{
     display: flex;
     align-content: center;
@@ -395,6 +390,11 @@ footer{
     font-size: 14px;
     line-height: 22px;
     color: #52525B;
+}
+.close {
+  position: absolute; 
+  top: 20px; 
+  right: 20px; 
 }
 /* Responsive Design */
 @media (max-width: 768px) {
