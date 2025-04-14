@@ -3,104 +3,223 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>RIKKEI_EDU _BLOG</title>
     <link rel="stylesheet" href="../css/article-manager.css" />
+    <link rel="icon" href="../assets/icons/logo.png" type="image/png" />
+    <link rel="stylesheet" href="../css/base.css" />
   </head>
   <body>
     <header>
       <nav>
-        <img src="../assets/icons/mail.png" alt="" width="22px" height="26px" />
-        <img src="../assets/icons/bell.png" alt="" width="30px" height="24px" />
-        <img
-          src="../assets/icons/avartar 3.png"
-          alt=""
-          width="43px"
-          height="34px"
-        />
+        <div class="icon-header">
+          <img
+            src="../assets/icons/mail.png"
+            alt="Mail"
+            width="22px"
+            height="26px"
+          />
+          <img
+            src="../assets/icons/bell.png"
+            alt="Bell"
+            width="30px"
+            height="24px"
+          />
+          <span id="user-info">
+            <img
+              src="../assets/icons/Avatar1.png"
+              alt="Avatar"
+              width="40px"
+              height="40px"
+              class="info"
+              id="avatar"
+            />
+            <div class="dropdown-menu" id="dropdown-menu">
+              <div class="info-a">
+                <div class="avatar-container">
+                  <img
+                    src="../assets/icons/Avatar1.png"
+                    alt="Avatar"
+                    width="40px"
+                    height="40px"
+                    class="info-i"
+                  />
+                  <div class="online-status"></div>
+                </div>
+                <div class="info-text">
+                  <p class="info-text-1">Rikkei</p>
+                  <p class="info-text-2">rikkei@gmail.com</p>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <a class="text-in" href="../pages/user_manager.html"
+                    >View Profile</a
+                  >
+                </li>
+                <li><a class="text-in" href="#">Update Profile Picture</a></li>
+                <li><a class="text-in" href="#">Change Password</a></li>
+                <li><a href="../pages/login.html" id="logout">Log Out</a></li>
+              </ul>
+            </div>
+          </span>
+        </div>
       </nav>
     </header>
-    <main>
-      <div class="container">
-        <h2>Quản lý bài viết</h2>
-        <table id="postTable">
-          <thead>
-            <tr>
-              <th>Ảnh</th>
-              <th>Tiêu đề</th>
-              <th>Chủ đề</th>
-              <th>Nội dung</th>
-              <th>Trạng thái</th>
-              <th>Chỉnh sửa trạng thái</th>
-              <th>Hành động</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <img
-                  src="../assets/images/Image1-article.png"
-                  alt="món ăn"
-                  width="100px"
-                  height="70px"
-                />
-              </td>
-              <td>Học nấu cá sốt cà chua</td>
-              <td>Nấu ăn</td>
-              <td>Tôi đã học được cách nấu ăn...</td>
-              <td><span class="status-public">Public</span></td>
-              <td>
-                <select onchange="changeStatus(this)">
-                  <option value="Public">Public</option>
-                  <option value="Private" selected>Private</option>
-                </select>
-              </td>
-              <td>
-                <button class="action-btn" onclick="deleteRow(this)">
-                  Xóa
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img
-                  src="https://via.placeholder.com/60x60.png?text=CV+IT"
-                  alt="cv it"
-                />
-              </td>
-              <td>Bí kíp viết CV ngành IT</td>
-              <td>IT</td>
-              <td>Chia sẻ cách viết CV ấn tượng...</td>
-              <td><span class="status-private">Private</span></td>
-              <td>
-                <select onchange="changeStatus(this)">
-                  <option value="Public">Public</option>
-                  <option value="Private" selected>Private</option>
-                </select>
-              </td>
-              <td>
-                <button class="action-btn" onclick="deleteRow(this)">
-                  Xóa
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
 
-        <div class="pagination">
-          <button class="but">&larr; Previous</button>
-          <div>
-            <span><button class="num">1</button></span>
-            <span><button class="num">2</button></span>
-            <span><button class="num">3</button></span>
-            <span>.....</span>
-            <span><button class="num">6</button></span>
-            <span><button class="num">7</button></span>
-            <span><button class="num">8</button></span>
+    <main>
+      <div class="main">
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <div class="menu-btn">
+            <img
+              src="../assets/icons/Users_Group.png"
+              alt="Manage Users"
+              width="24px"
+              height="24px"
+            />
+            <a class="link" href="../pages/user_manager.html">Manage Users</a>
           </div>
-          <button class="but">Next &rarr;</button>
+          <div class="menu-btn">
+            <img
+              src="../assets/icons/Book.png"
+              alt="Manage Entries"
+              width="24px"
+              height="24px"
+            />
+            <a class="link" href="../pages/dashboard.html">Manage Entries</a>
+          </div>
+          <div class="menu-btn">
+            <img
+              src="../assets/icons/Book_Open.png"
+              alt="Manage Articles"
+              width="24px"
+              height="24px"
+            />
+            <a class="link" href="../pages/article-manager.html"
+              >Manage Articles</a
+            >
+          </div>
+          <div class="menu-btn">
+            <img
+              src="../assets/icons/Log_Out.png"
+              alt="Log Out"
+              width="24px"
+              height="24px"
+            />
+            <a class="link" href="../pages/login.html">Log Out</a>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+          <div class="title">
+            <div class="search">
+              <input
+                type="text"
+                placeholder="Search user"
+                class="search-box"
+                id="search"
+              />
+              <img
+                src="../assets/icons/search-user.png"
+                alt="Search User"
+                width="18px"
+                height="18px"
+                class="search-icon"
+              />
+            </div>
+          </div>
+          <button class="add-btn" onclick="openModal()">Thêm Bài Viết</button>
+
+          <!-- Modal to add post -->
+          <div id="postModal" class="modal">
+            <div class="container">
+              <span class="close-btn" id="close">&times;</span>
+              <h3>📋 Thêm Bài Viết</h3>
+              <br />
+
+              <input
+                type="text"
+                placeholder="Tiêu đề"
+                id="title"
+                class="texts"
+              />
+              <input
+                type="text"
+                placeholder="Chủ đề"
+                id="topic"
+                class="texts"
+              />
+              <textarea placeholder="Nội dung" id="center"></textarea>
+
+              <div class="status" id="status">
+                <div>
+                  <input
+                    type="radio"
+                    id="public"
+                    name="status"
+                    value="public"
+                  />
+                  <label for="public">Public</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="private"
+                    name="status"
+                    value="private"
+                  />
+                  <label for="private">Private</label>
+                </div>
+              </div>
+
+              <!-- Choose image -->
+              <div class="img">
+                <label for="imageUpload" class="imageUpload">Chọn ảnh</label>
+                <input type="file" id="imageUpload" accept="image/*" />
+                <span id="fileName" class="file"></span>
+              </div>
+
+              <!-- Save button -->
+              <button class="accept" onclick="addPost()">Lưu bài viết</button>
+
+              <!-- Close button -->
+              <span onclick="closeModal()" class="close">✖</span>
+            </div>
+          </div>
+
+          <!-- Post Management Table -->
+          <div class="container">
+            <h2>Quản lý bài viết</h2>
+            <table id="postTable">
+              <thead>
+                <tr>
+                  <th>Ảnh</th>
+                  <th>Tiêu đề</th>
+                  <th>Chủ đề</th>
+                  <th>Nội dung</th>
+                  <th>Trạng thái</th>
+                  <th>Chỉnh sửa trạng thái</th>
+                  <th>Hành động</th>
+                </tr>
+              </thead>
+              <tbody id="postTableBody">
+                <!-- Posts will be rendered here -->
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </main>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <button class="but" id="prevPage">&larr; Previous</button>
+      <div id="paginationContainer" class="container"></div>
+      <button class="but" id="nextPage">Next &rarr;</button>
+    </div>
+
     <script src="../js/article-manager.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
