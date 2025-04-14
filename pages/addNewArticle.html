@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>RIKKEI_EDU _BLOG</title>
     <link rel="stylesheet" href="../css/article-manager.css" />
+    <link rel="icon" href="../assets/icons/logo.png" type="image/png" />
+    <link rel="stylesheet" href="../css/base.css" />
   </head>
   <body>
     <!DOCTYPE html>
@@ -17,6 +19,13 @@
       </head>
       <body>
         <div class="container">
+          <span class="close"
+            ><a href="../pages/index.html"
+              ><img
+                src="../assets/icons/x-circle.png"
+                width="24px"
+                height="24px" /></a
+          ></span>
           <img
             src="../assets/images/add-article.png"
             alt=""
@@ -29,13 +38,17 @@
             <input type="text" id="title" name="title" class="input-box" />
 
             <label for="categories">Article Categories:</label>
-            <input
-              type="text"
+            <select
               id="categories"
-              name="categories"
-              class="mood-container"
-              disabled
-            />
+              name="category"
+              class="category"
+              id="recent"
+            >
+              <option value="Daily Journal">Daily Journal</option>
+              <option value="Work & Career">Work & Career</option>
+              <option value="Personal Thoughts">Personal Thoughts</option>
+              <option value="Emotions & Feelings">Emotions & Feelings</option>
+            </select>
 
             <label for="mood">Mood:</label>
             <div class="mood-container">
@@ -44,7 +57,7 @@
             </div>
 
             <label for="content">Content:</label>
-            <input type="text" class="input-content" />
+            <textarea class="input-content" id=""></textarea>
 
             <label>Status</label>
             <div class="status">
@@ -54,10 +67,21 @@
               <label for="private">private</label>
             </div>
 
+            <label for="image">Image:</label>
+            <input
+              type="file"
+              id="image"
+              name="image"
+              class="input-box"
+              accept="image/*"
+            />
+
             <button type="submit" class="btn-add">Add</button>
           </form>
         </div>
       </body>
+      <script src="../js/addNewArticle.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </html>
   </body>
 </html>
