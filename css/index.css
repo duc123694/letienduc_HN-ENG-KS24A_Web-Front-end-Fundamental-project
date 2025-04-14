@@ -366,13 +366,17 @@ button.num.active {
     background-color:#F9F5FF ;
     color: #7F56D9;
 }
-.container {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    gap: 70px;
+#paginationContainer{
+  justify-content: space-around;
+  padding: 50px;
+  gap: 70px;
 }
-
+.container{
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  gap: 70px;
+}
 .footer-icon{
     display: flex;
     align-content: center;
