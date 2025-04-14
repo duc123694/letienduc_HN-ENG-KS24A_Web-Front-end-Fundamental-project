@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RIKKEI_EDU _BLOG</title>
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/base.css" />
     <link rel="icon" href="../assets/icons/logo.png" type="image/png" />
   </head>
   <body>
@@ -70,11 +71,15 @@
                   </div>
                 </div>
               </li>
-              <li><a class="text-in" href="#">View profie</a></li>
+              <li>
+                <a class="text-in" href="../pages/user_manager.html"
+                  >View profie</a
+                >
+              </li>
               <li><a class="text-in" href="#">Update profile picture</a></li>
               <li><a class="text-in" href="#">Change password</a></li>
 
-              <li><a href="#" id="logout">Log Out</a></li>
+              <li><a href="../pages/login.html" id="logout">Log Out</a></li>
             </ul>
           </li>
         </ul>
@@ -103,7 +108,7 @@
 
         <div>
           <div class="center">
-            <div>
+            <div id="recent-post" class="img">
               <img
                 src="../assets/images/Image2-post.png"
                 alt="Article Image"
@@ -146,195 +151,34 @@
         </div>
       </div>
 
+      <h2 class="title-article">
+        ADD NEW ARTICLE
+        <a href="../pages/addNewArticle.html"
+          ><img
+            class="icon-article"
+            src="../assets/icons/icon-article.png"
+            alt=""
+            width="32px"
+            height="32px"
+        /></a>
+      </h2>
+      <p class="text-title-article">
+        <strong>All blog posts</strong> Daily Journal Work & Career Personal
+        Thoughts Emotions & Feelings
+      </p>
       <section id="add-article">
-        <h2 class="title-article">
-          ADD NEW ARTICLE
-          <a href="../pages/article-manager.html"
-            ><img
-              class="icon-article"
-              src="../assets/icons/icon-article.png"
-              alt=""
-              width="32px"
-              height="32px"
-          /></a>
-        </h2>
-        <p class="text-title-article">
-          <strong>All blog posts</strong> Daily Journal Work & Career Personal
-          Thoughts Emotions & Feelings
-        </p>
         <div class="center-article">
-          <div class="posts-container">
-            <div class="post">
-              <img
-                src="../assets/images/Image1-article.png"
-                alt=""
-                width="384px"
-                height="240px"
-              />
-              <p class="date">Date: 2025-02-25</p>
-              <div class="title-imgs">
-                <h4 class="small-title">A Productive Day at Work</h4>
-                <a href="../pages/entries_manager.html"
-                  ><img
-                    src="../assets/icons/Icon wrap.png"
-                    alt=""
-                    width="24px"
-                    height="28px"
-                /></a>
-              </div>
-              <p class="texts">
-                Today was a really productive day at work. I managed to finish a
-                report ahead of schedule and received positive feedback from my
-                manager.
-              </p>
-              <p class="badge">Daily Journal</p>
-            </div>
-            <div class="post">
-              <img
-                src="../assets/images/imge2-article.png"
-                alt=""
-                width="384px"
-                height="240px"
-              />
-              <p class="date">Date: 2025-02-24</p>
-              <div class="title-imgs">
-                <h4 class="small-title">My First Job Interview Experience</h4>
-                <a href="../pages/entries_manager.html"
-                  ><img
-                    src="../assets/icons/Icon wrap.png"
-                    alt=""
-                    width="24px"
-                    height="28px"
-                /></a>
-              </div>
-              <p class="texts">
-                I had my first job interview today! I was nervous at first, but
-                as the conversation went on, I felt more confident.
-              </p>
-              <p class="badge2">Work & Career</p>
-            </div>
-            <div class="post">
-              <img
-                src="../assets/images/imge3-article.png"
-                alt=""
-                width="371px"
-                height="240px"
-              />
-              <p class="date">Date: 2025-02-23</p>
-              <div class="title-imgs">
-                <h4 class="small-title">Overthinking Everything</h4>
-                <a href="../pages/entries_manager.html"
-                  ><img
-                    src="../assets/icons/Icon wrap.png"
-                    alt=""
-                    width="24px"
-                    height="28px"
-                /></a>
-              </div>
-              <p class="texts">
-                Lately, I have been overthinking everything, from small
-                decisions to bigger life choices.I know I should trust myself
-              </p>
-              <p class="badge3">Personal Thoughts</p>
-            </div>
-            <div class="post">
-              <img
-                src="../assets/images/Image4-article.png"
-                alt=""
-                width="384px"
-                height="240px"
-              />
-              <p class="date">Date: 2025-02-16</p>
-              <div class="title-imgs">
-                <h4 class="small-title">
-                  How collaboration makes us better designers
-                </h4>
-                <a href="../pages/entries_manager.html"
-                  ><img
-                    src="../assets/icons/Icon wrap.png"
-                    alt=""
-                    width="24px"
-                    height="28px"
-                /></a>
-              </div>
-              <p class="texts">
-                Collaboration can make our teams stronger, and our individual
-                designs better.
-              </p>
-              <p class="badge2">Work & Career</p>
-            </div>
-            <div class="post">
-              <img
-                src="../assets/images/Image5-article.png"
-                alt=""
-                width="384px"
-                height="240px"
-              />
-              <p class="date">Date: 2025-02-15</p>
-              <div class="title-imgs">
-                <h4 class="small-title">
-                  Our top 10 Javascript frameworks to use
-                </h4>
-                <a href="../pages/entries_manager.html"
-                  ><img
-                    src="../assets/icons/Icon wrap.png"
-                    alt=""
-                    width="24px"
-                    height="28px"
-                /></a>
-              </div>
-              <p class="texts">
-                JavaScript frameworks make development easy with extensive
-                features and functionalities.
-              </p>
-              <p class="badge3">Work & Career</p>
-            </div>
-            <div class="post">
-              <img
-                src="../assets/images/Image6-article.png"
-                alt=""
-                width="384px"
-                height="240px"
-              />
-              <p class="date">Date: 2025-02-05</p>
-              <div class="title-imgs">
-                <h4 class="small-title">
-                  Podcast: Creating a better CX Community
-                </h4>
-                <a href="../pages/entries_manager.html"
-                  ><img
-                    src="../assets/icons/Icon wrap.png"
-                    alt=""
-                    width="24px"
-                    height="28px"
-                /></a>
-              </div>
-              <p class="texts">
-                Starting a community doesn’t need to be complicated, but how do
-                you get started?
-              </p>
-              <p class="badge">Emotions & Feelings</p>
-            </div>
+          <div class="posts-container" id="postsContainer">
+            <div class="post"></div>
           </div>
         </div>
       </section>
 
+      <!-- Phân trang -->
       <div class="pagination">
-        <div>
-          <a href="#" class="prev">← Previous</a>
-        </div>
-        <div>
-          <a href="../pages/index.html" class="page active">1</a>
-          <a href="#" class="page">2</a>
-          <a href="#" class="page">3</a>
-          <span class="dots">...</span>
-          <a href="#" class="page">8</a>
-          <a href="#" class="page">9</a>
-          <a href="#" class="page">10</a>
-        </div>
-        <div>
-          <a href="#" class="next">Next →</a>
-        </div>
+        <button class="but" id="prevPage">&larr; Previous</button>
+        <div id="paginationContainer" class="container"></div>
+        <button class="but" id="nextPage">Next &rarr;</button>
       </div>
     </main>
 
