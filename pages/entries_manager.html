@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/entries_manager.css" />
-    <title>Productive Day at Work</title>
+    <title>RIKKEI_EDU _BLOG</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="icon" href="../assets/icons/logo.png" type="image/png" />
   </head>
   <body>
     <div class="back-home">
@@ -13,6 +15,7 @@
     <div class="center-post">
       <div>
         <img
+          class="img-avatar"
           src="../assets/icons/Avatar1.png"
           alt=""
           width="32px"
@@ -28,7 +31,7 @@
           air. Looking forward to another great day tomorrow!
         </p>
         <div class="post-actions">
-          <span
+          <span class="like-btn"
             >15 Likes
             <img
               src="../assets/icons/like.png"
@@ -36,21 +39,23 @@
               width="16px"
               height="16px"
           /></span>
-          <span class="comment"
-            >6 Replies
-            <img
-              src="../assets/icons/comment.png"
-              alt=""
-              width="16px"
-              height="16px"
-          /></span>
+          <span class="comment-count"
+            >1 Replies
+            <button class="showComment">
+              <img
+                src="../assets/icons/comment.png"
+                alt=""
+                width="16px"
+                height="16px"
+              /></button
+          ></span>
         </div>
         <div class="view">
           <span class="showView"
-            >View all 12 comments <button class="show">&or;</button></span
+            >View all comments <button class="show">&or;</button></span
           >
         </div>
-        <div class="viewComment">
+        <div class="viewComment" style="display: none">
           <div>
             <img
               src="../assets/icons/Avatar2.png"
@@ -59,7 +64,7 @@
               height="32px"
             />
           </div>
-          <div class="conatiner">
+          <div class="container">
             <p class="text-comment">verry good!</p>
             <div class="post-actions">
               <span
@@ -78,8 +83,19 @@
                   width="16px"
                   height="16px"
               /></span>
+
+              <button class="delete-btn">Xoá</button>
             </div>
           </div>
+        </div>
+
+        <div class="comments-container">
+          <!-- Các bình luận sẽ hiển thị tại đây -->
+        </div>
+
+        <div class="add-comment">
+          <input type="text" id="commentInput" placeholder="Add a comment..." />
+          <button id="addCommentBtn">Post</button>
         </div>
       </div>
     </div>
